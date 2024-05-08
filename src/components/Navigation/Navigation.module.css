@@ -1,0 +1,10 @@
+.navMenu {
+    font-size: 24px;
+    padding: 10px;
+    background-color: #151515;
+}
+
+.navLink {
+    padding-right: 10px;
+    color: #FFFFFF;
+}

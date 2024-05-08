@@ -1,0 +1,21 @@
+ .reviewsList {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ .reviewsItem {
+     width: 30%;
+     margin-bottom: 20px;
+ }
+
+ .reviewsAuthor {
+     font-size: 20px;
+     font-weight: 700;
+     margin-bottom: 10px;
+ }
+
+ .reviewsText {
+     font-size: 16px;
+     line-height: 1.5;
+ }
