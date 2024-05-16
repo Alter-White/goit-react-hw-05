@@ -33,9 +33,9 @@ const MoviesPage = () => {
     };
 
     fetchMovies();
-  }, [searchParams, currentPage]);
+  }, [searchParams]);
 
-  const handleSearch = async (query, currentPage) => {
+  const handleSearch = (query, currentPage) => {
     try {
       setSearchParams({ query, page: currentPage });
     } catch (error) {
@@ -50,7 +50,6 @@ const MoviesPage = () => {
       const newData = await getSearchingMovie(query, nextPage);
       setMovies((prevMovies) => [...prevMovies, ...newData]);
       setCurrentPage(nextPage);
-      setSearchParams({ query, page: nextPage });
     } catch (error) {
       console.error("Error loading more movies:", error);
     }
